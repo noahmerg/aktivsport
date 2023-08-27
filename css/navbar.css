@@ -1,0 +1,96 @@
+nav {
+    background-color: #010101;
+}
+
+nav ul {
+    background-color: #010101;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    list-style-type: none;
+}
+
+.nav-center{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.nav-right{
+    position: absolute;
+    right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: right;
+}
+
+.nav-left{
+    position: absolute;
+    left: 10px;
+}
+
+.nav-left img{
+    height: 85px;
+}
+
+
+.nav-right img{
+    filter: brightness(0) invert(1);
+    height: 48px;
+    padding: 0 10px 0 10px;
+    margin: 0;
+    clear: both;
+}
+
+.nav-right img:hover{
+    filter: none;
+}
+
+.nav-center li {
+    float: left;
+    padding: 20px 20px 16px 20px;
+}
+
+.nav-right li {
+    float: left;
+    padding-top: 8px;
+}
+
+.nav-center a {
+    display: block;
+    color: #A4A4A4;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 2px;
+    font-size: larger;
+}
+
+.current-page{
+    color: white;
+}
+
+.nav-hover {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
