@@ -1,0 +1,23 @@
+footer{
+    text-align: center;
+    background-color: #010101;
+    color: white;
+    padding: 20px 0 20px 0;
+}
+
+footer p{
+    padding: 1px;
+    margin: 1px;
+}
+
+footer a{
+    text-decoration: underline;
+    color: white;
+    display: inline-block;
+    padding: 3px;
+}
+
+.footer-header{
+    font-size: xx-large;
+    padding: 2px;
+}

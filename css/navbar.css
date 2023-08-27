@@ -1,5 +1,8 @@
 nav {
     background-color: #010101;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav ul {
