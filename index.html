@@ -3,28 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Aktiv Sport Trier</title>
-    <link rel="icon" href="/images/logo.jpg">
+    <link rel="icon" href="/images/icon.png">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/mainstyle.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <div class="nav-left">
-                <li><a href="#Startseite"><img src="/images/logo.png"></a></li>
-            </div>
-            <div class="nav-center">
-                <li><a class="current-page nav-hover" href="#Startseite" style="color: white">Startseite</a> </li>
-                <li><a class="nav-hover" href="#Unser Studio">Unser Studio</a> </li>
-                <li><a class="nav-hover" href="#Unsere Preise">Unsere Preise</a> </li>
-                <li><a class="nav-hover" href="#Unsere Partner">Unsere Partner</a> </li>
-            </div>
-            <div class="nav-right">
-                <li><a target=”_blank” href="https://www.instagram.com/aktivsporttrier/"><img src="/images/instagram.png"></a></li>
-                <li><a target=”_blank” href="https://www.youtube.com/user/AktivOli"><img src="/images/youtube.png"></a></li>
-                <li><a target=”_blank” href="https://www.facebook.com/AktivSportTrier"><img src="/images/facebook.png"></a></li>
-            </div>
-        </ul>
-    </nav>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
 </body>
 </html>
