@@ -51,13 +51,3 @@ main{
     font-size: 55px;
 }
 
-.parallax{
-    background-image: url("/images/background.jpg");
-    min-height: 300px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
